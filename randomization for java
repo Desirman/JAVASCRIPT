@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class RandomNumbers {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int[] digits = new int[5];
+        for (int i = 0; i < digits.length; i++) {
+            digits[i] = random.nextInt(10); // Generates a random digit between 0 and 9
+        }
+        System.out.println("Array of 5 random digits: " + Arrays.toString(digits));
+    }
+}
